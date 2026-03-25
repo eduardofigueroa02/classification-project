@@ -37,7 +37,7 @@ According to the authors of this dataset (Breiman & Stone, 1984), there are thre
 
 ### Figure 1: Prototype Waveforms *h~1~(t)*, *h~2~(t)*, and *h~3~(t)*
 
-![Figure 1](img/figure_1.png)
+![Figure 1](resources/img/figure_1.png)
 
 However, to make the dataset more realistic the three classes that a clustering algorithm must identify are not pure waveforms, instead they are mixtures of two waveforms and noise. Each class is generated in the following way.
 
@@ -59,7 +59,7 @@ Thus, class 1 objects are a mix of h~1~(t) and h~2~(t) waveforms and noise. Clas
 
 ### Figure 2: Waveform Classes
 
-![Waveform Classes](img/figure_2.png)
+![Waveform Classes](resources/img/figure_2.png)
 
 ---
 
