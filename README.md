@@ -56,7 +56,7 @@ Create your own branch:
 
 ```bash
 git checkout -b <your-branch-name> 
-``
+```
 
 ### 2. Python Virtual Environment
 
