@@ -128,6 +128,8 @@ classification-project/
 │   │   ├── X.csv                # Feature data
 │   │   └── y.csv                # Class labels
 │   ├── preprocessed/            # Cleaned and transformed data
+│   │   ├── X_scaled.csv         # Scaled features
+│   │   └── X_PCA.csv            # PCA-transformed features
 │   └── utils/                   # Data utility scripts
 │       ├── find-min-max.py      # Min-max computation script
 │       ├── scale-data.py        # Data scaling script
