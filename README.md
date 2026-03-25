@@ -48,9 +48,15 @@ Python 3.10+
 Clone the repository and navigate to the project root:
 
 ```bash
-git clone 
-cd orcid-project
+git clone https://github.com/AshleyTRS/classification-project.git
+cd classification-project
 ```
+
+Create your own branch:
+
+```bash
+git checkout -b <your-branch-name> 
+``
 
 ### 2. Python Virtual Environment
 
