@@ -156,7 +156,7 @@ classification-project/
 
 ---
 
-## Data
+## Data Preprocessing
 
 The data used for unsupervised learning is located in the `data/preprocessed` directory. There are two `csv` file under this directory- the `X_scaled.csv` and `X_PCA.csv`- which were derived from the raw dataset imported from the UCI repository. The first file `X_scaled.csv` contains the resulting dataset after scaling the original one. Before a scaling transformation was applied to the dataset, objects had a large variance between attritubes. This high variance impacts Euclidean distance calculations (all clustering algorithms are distance based). If one attribute varies more, then it dominates the distance. This is clearly seen in the peaks of a waveform - it is going to have a higher variance than all the other 20 attributes. Scaling makes all attributes contribute equally to Euclidean distance calculations, and so all 21 measurements of a waveform are as equally as imporatnt.
 
