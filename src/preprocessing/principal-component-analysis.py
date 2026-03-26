@@ -10,12 +10,12 @@ def transform_data(X_scaled):
 def save_transformed_data(X_scaled, path=None):
     if path is None:
         script_dir = os.path.dirname(os.path.abspath(__file__))
-        path = os.path.join(script_dir, '..', 'preprocessed', 'X_PCA.csv')
+        path = os.path.join(script_dir, '..', '..', 'data', 'preprocessed', 'X_PCA.csv')
     pd.DataFrame(X_scaled).to_csv(path, index=False)
 
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    scaled_path = os.path.join(script_dir, '..', 'preprocessed', 'X_scaled.csv')
+    scaled_path = os.path.join(script_dir, '..', '..', 'data', 'preprocessed', 'X_scaled.csv')
     X_scaled = pd.read_csv(scaled_path)
 
     X_pca = transform_data(X_scaled)
