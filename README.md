@@ -31,11 +31,11 @@ The Waveform Database Generator (Version 1) dataset is a synthetic dataset widel
 
 Although the dataset includes class labels, they are intentionally excluded during the clustering phase and may only be used for interpretation and comprarion of clustering results.
 
-Each data point or object in the dataset represents a 21-dimensional vector *x*, where *x = (x~1~, x~2~, . . . , x~21~)*. Conceptually, each vector is a noisy waveform sampled at 21 points in time.
+Each data point or object in the dataset represents a 21-dimensional vector $x$, where $x = (x_1, x_2, . . . , x_{21})$. Conceptually, each vector is a noisy waveform sampled at 21 points in time.
 
-According to the authors of this dataset (Breiman & Stone, 1984), there are three prototypes of waveforms that are the basis of the problem: *h~1~(t)*, *h~2~(t)*, and *h~3~(t)*. These prototype classes are graphed below in Figure 1.
+According to the authors of this dataset (Breiman & Stone, 1984), there are three prototypes of waveforms that are the basis of the problem: $h~_1(t), h_2(t)$, and $h_3(t)$. These prototype classes are graphed below in Figure 1.
 
-### Figure 1: Prototype Waveforms *h~1~(t)*, *h~2~(t)*, and *h~3~(t)*
+### Figure 1: Prototype Waveforms $h~_1(t), h_2(t)$, and $h_3(t)$
 
 ![Figure 1](resources/img/figure_1.png)
 
@@ -43,19 +43,19 @@ However, to make the dataset more realistic the three classes that a clustering 
 
 #### Class 1 Objects
 
-*xₘ = u·h₁(m) + (1 - u)·h₂(m) +  ε~m~*
+$x_m = \mu·h_1(m) + (1 - \mu)·h_2(m) +  \epsilon_m$
 
 #### Class 2 Objects
 
-*xₘ = u·h₁(m) + (1 - u)·h₃(m) + ε~m~*
+$x_m = \mu·h_1(m) + (1 - \mu)·h_3(m) + \epsilon_m$
 
 #### Class 3 Objects
 
-*xₘ = u·h₂(m) + (1 - u)·h₃(m) + ε~m~*
+$x_m = \mu·h_2(m) + (1 - \mu)·h_3(m) + \epsilon_m$
 
-In these class definitions *xₘ* is a 21-attribute vector that represents a point in the dataset beloging to class *i*, *u* is a random mixing coefficient that has a value in the interval [0, 1], and m is the index of the attribute or the position at which the waveform was sampled (m = 1, 2, ..., 21), and ε~m~ is random noise added to attribute m, which is calculated from a normal distribution with a mean of 0 and a variance of 1. The purpose of the noise is to distort the waveform slightly. Does the noise bias the data? No, it does not because on average noise is 0 and noise strenght is consistent across data due to the variance value of 1.
+In these class definitions $x_m$ is a $21$-attribute vector that represents a point in the dataset beloging to class $i$, $\mu$ is a random mixing coefficient that has a value in the interval $[0, 1]$, and $m$ is the index of the attribute or the position at which the waveform was sampled $(m = 1, 2, ..., 21)$, and $\epsilon _m$ is random noise added to attribute $m$, which is calculated from a normal distribution with a mean of $0$ and a variance of $1$. The purpose of the noise is to distort the waveform slightly. Does the noise bias the data? No, it does not because on average noise is $0$ and noise strenght is consistent across data due to the variance value of $1$.
 
-Thus, class 1 objects are a mix of h~1~(t) and h~2~(t) waveforms and noise. Class 2 objects are a mix of h~1~(t) and h~3~(t) waveforms and noise. Class 3 objects are a mix of h~2~(t) and h~3~(t) waveforms and noise. In other words, each waveform sample in the dataset is a superposition of two prototype waveforms and noise. These classes are shown in Figure 2.
+Thus, class 1 objects are a mix of $h~_1(t)$ and $h~_2(t)$ waveforms and noise. Class 2 objects are a mix of $h~_1(t)$ and $h~_3(t)$ waveforms and noise. Class 3 objects are a mix of $h~_2(t)$ and $h~_3(t)$ waveforms and noise. In other words, each waveform sample in the dataset is a superposition of two prototype waveforms and noise. These classes are shown in Figure 2.
 
 ### Figure 2: Waveform Classes
 
